@@ -41,6 +41,7 @@ namespace Test
 			Assert.AreEqual("Prima parte Seconda parte", s.Concatenate(" ", s1, s2));
 			Assert.AreEqual("Prima parte,Seconda parte", s.Concatenate(",", s1, s2));
 			Assert.AreEqual("Prima parte e Seconda parte", s.Concatenate(" e ", s1, s2));
+			Assert.AreEqual("Prima parte e Seconda parte e Prima parte", s.Concatenate(" e ", s1, s2, s1));
 		}
 	}
 }
